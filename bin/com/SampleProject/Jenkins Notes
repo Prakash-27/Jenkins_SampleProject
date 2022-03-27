@@ -1,0 +1,31 @@
+Absolute Beginners Guide CI/CD:
+-------------------------------
+
+1. CI - Continuous Integration - 95% Tester are using only CI
+2. CD - Continuous Delivery and Continuous Deployment.
+
+For a Change this time its a Wague Theory:
+------------------------------------------
+Continuous Integration is the practice of running your test on a non_developer machine automatically every time someone Pushes new code in source Repository.
+ 
+In OtherWords, Whenever we add some new code and commit it the Repository, we have to ensure that the new one Shouldn't break the existing working code.
+So its mandatory to run automated tests for every new commit. this kind of Continuous integration testing process is called CI.
+
+CD - Delivery. it is like a Preparation Process.
+the process of making the code to be deployable.
+
+CD - deployment. it is the actual process of deployment.
+
+Our focus should be on CI. 
+ 
+Tool we are going to use Jenkins.
+
+Some CI/CD Tools are --> Bamboo CI, Travis CI, hudson, Circle CI. 
+
+How to Run Jenkins war file in command Prompt:
+----------------------------------------------
+Go to the jenkins.war file location and on top of the Search box Enter --> cmd, 
+and then Type the Command --> java -jar jenkins.war
+
+Then when the cmd will say That --> Jenkins is fully up and running,
+On that time we have to type in browser --> localhost:8080 This will open Jenkins in our Browser then we have to Sign in.
