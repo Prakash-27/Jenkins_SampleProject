@@ -22,6 +22,8 @@ Tool we are going to use Jenkins.
 
 Some CI/CD Tools are --> Bamboo CI, Travis CI, hudson, Circle CI. 
 
+
+
 How to Run Jenkins war file in command Prompt:
 ----------------------------------------------
 Go to the jenkins.war file location and on top of the Search box Enter --> cmd, 
@@ -29,3 +31,76 @@ and then Type the Command --> java -jar jenkins.war
 
 Then when the cmd will say That --> Jenkins is fully up and running,
 On that time we have to type in browser --> localhost:8080 This will open Jenkins in our Browser then we have to Sign in.
+
+
+
+
+How to Get Http Server Host link using NgRok to Git WebHooks Attach:
+--------------------------------------------------------------------
+
+What is ngrok:
+--------------
+ngrok is a cross-platform application that enables developers to expose a local development server
+to the Internet with minimal effort.
+
+Steps:
+------
+1.Go to the folder where the ngrok.exe file is Present on that click the on top location search box and type 'cmd' and follow the below Steps
+
+C:\Ngrok>ngrok.exe --version --> Enter
+ngrok version 2.3.40
+
+C:\Ngrok>ngrok.exe http 8080 --> Enter
+
+
+ngrok by @inconshreveable                                (Ctrl+C to quit) 
+Session Status                online
+Session Expires               1 hour, 59 minutes
+Version                       2.3.40
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://5f5d-2409-4072-50d-970e-jnjcn-7c8d-33c4-e84d.ngrok.io -> http://localhost:8080
+Forwarding                    https://5f5d-2409-4072-50d-970e-kjsn-7c8d-33c4-e84d.ngrok.io -> http://localhost:8080
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              0       0       0.00    0.00    0.00    0.00      
+                              
+Git WebHooks Attach ngrok http server:
+--------------------------------------
+                                                             To use this command
+http://5f5d-2409-4072-50d-970e-jnjcn-7c8d-33c4-e84d.ngrok.io/github-webhook/                              
+                                                                      
+
+Jenkins Basic Topics:
+---------------------
+
+1.Creating Jenkins free Style job --> My First Jenkins free Style Job
+2.Configure Email Notification in Jenkins --> How to send Email Notification From Jenkins Job
+3.How to install plugins in jenkins / also we can install jenkins plugin using HPI file without internet
+4.Build Maven Project using Jenkins Excecute maven Projects in jenkins
+5.How to configure jenkins with github, Build maven github project in jenkins
+6.How to create jenkins job with parameters, Jenkins parameterized build
+7.Automatically Triggering jenkins jobs using github WebHooks, jenkins integration with github WebHooks
+8.How to Run jenkins job Build Periodically, Run jenkins job Every 1 Month, 5 minutes, 2 hours, The Cronjob time to set the job run periodically. 
+9.How to Run jenkins job Poll SCM, Run jenkins job Every 1 Month, 5 minutes, 2 hours, When the Github Project is having some commit changes then it will run the build by given CronJob Time.
+10.How to create Upstream and DownStream jobs in jenkins, Run Multiple jenkins job, Build Pipeline.
+11.What is Jenkins Pipeline, Jenkins Pipeline setup Example with Github, jenkinsfile for Maven build.
+
+
+
+Advanced Topic in Jenkins:
+--------------------------
+1.How to create launch and connect to windows instance in AWS EC2
+2.jenkins Master Slave Setup using AWS Window (EC2) - Step By Step Guide.
+3.How To Reset Jenkins Admin Password, Reset jenkins Password Simple Steps, Forget Jenkins Password.
+4.How to Install Jenkins as a Service in Window, Start and Stop jenkins services.
+5.How to Rebuild Jenkins Job using the Same Parameters of Last Build Rebuilder Plugin of jenkins
+6.How to install jenkins using Docker container
+7.Login to Docker Container as Root and as Non Root User
+8.How to Fix Email Notifications in Jenkins - Enable Debug Mode In Jenkins
+9.Jenkins CLI Tutorial, create Build and delete job using jenkins CLI commands with Authentication.
+10.How to send Notification From Jenkins to Slack Using Jenkins Job and Jenkins Pipeline
+
+
+
+
+
